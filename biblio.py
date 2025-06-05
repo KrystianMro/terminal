@@ -1,6 +1,5 @@
 import datetime
 
-
 ksiazki = []
 studenci = []
 MAX_STUDENTOW = 15
@@ -97,23 +96,23 @@ def menu():
         print("6. Wypożycz książkę")
         print("7. Raport przypomnienia")
         print("0. Wyjście")
-
+        
         wybor = input("Wybierz opcję: ")
-if wybor == "1":
-     pokaz_ksiazki()
-elif wybor == "2":
+        if wybor == "1":
+            pokaz_ksiazki()
+        elif wybor == "2":
             dodaj_ksiazke()
-elif wybor == "3":
+        elif wybor == "3":
             edytuj_ksiazke()
-elif wybor == "4":
+        elif wybor == "4":
             usun_ksiazke()
-elif wybor == "5":
+        elif wybor == "5":
             dodaj_studenta()
-elif wybor == "6":
+        elif wybor == "6":
             wypozycz_ksiazke()
-elif wybor == "7":
+        elif wybor == "7":
             raport_przypomnienia()
-elif wybor == "0":
+        elif wybor == "0":
             break
         else:
             print("Nieprawidłowy wybór.")
